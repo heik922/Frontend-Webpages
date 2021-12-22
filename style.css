@@ -1,0 +1,137 @@
+.content{
+  width:100%;
+  height:800px;
+  margin:auto;
+  clear:both;
+  background-color: rgba(255, 255, 255, 0.65);
+}
+
+.intro {
+  background-image: url('img/Mei.jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.intro-container {
+  background-color: rgba(255, 255, 255, 0.65);
+  position: absolute;
+  top: 0;
+  left : 0;
+  width:100%;
+  height: 100%;
+}
+
+#mei{
+  color:#ffa03b;
+}
+
+.intro-h1{
+  font-family: 'Josefin Sans',sans-serif;
+  font-size: 100px;
+  padding: 100px 0px 0 50px;
+  max-width: 250px;
+}
+
+.intro-h2{
+  font-family: 'Roboto';
+  font-size:22px;
+  letter-spacing: 8px;
+  line-height: 30px;
+  font-weight:bold;
+  padding:0 0 0 50px;
+  max-width: 300px;
+}
+
+@media only screen and (min-width:768px) {
+  .intro {
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: auto 600px;
+    height: 600px;
+  }
+  .intro-container{
+    background-color: rgba(255, 255, 255, 0);
+    max-width: 350px;
+  }
+  .intro-h1{
+    max-width: none;
+  }
+  .intro-h2{
+    font-weight: normal;
+    max-width: none;
+  }
+}
+
+@media only screen and (min-width:1000px){
+  .intro {
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: auto 900px;
+    height: 800px;
+  }
+  .intro-container{
+    background-color: rgba(255, 255, 255, 0);
+    padding : 200px 100px;
+    max-width: 700px;
+  }
+  #mei{
+    color: black;
+  }
+  #mei:hover{
+    color:#ffa03b;
+  }
+}
+
+.letstalk {
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  color: black;
+  border: 1.5px solid #ffa03b;
+  background-color: #ffffff;
+  margin:20px 0 0 50px;
+  padding:15px 30px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.letstalk:hover{
+  background-color: #ffa03b;
+  transform:scale(1.1);
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.24);
+}
+
+
+.about{
+  margin: 0 auto;
+  display: flex;
+}
+
+.projects{
+  background-color: blue;
+}
+
+.column {
+  flex-flow: row wrap;
+  max-width: 500px;
+  margin:50px 25px;
+}
+
+.column-title {
+  font-family: 'Josefin Sans',sans-serif;
+  text-decoration: underline;
+  font-size: 42px;
+  padding-bottom: 25px;
+}
+
+.column-content{
+  font-family: 'Roboto',Verdana;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+footer {
+  height: 80px;
+}

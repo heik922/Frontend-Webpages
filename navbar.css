@@ -1,0 +1,54 @@
+nav {
+  height: 60px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #fd8f47;
+  padding-left: 10px;
+}
+
+ul li{
+  display: inline-block;
+  line-height: 60px;
+}
+
+ul li a {
+  display: block;
+  text-decoration: none;
+  font-family: 'Montserrat', Verdana;
+  font-size: 16px;
+  padding: 0 5px;
+}
+
+@media only screen and (min-width:768px){
+  nav {
+    height: 90px;
+    padding-left: 40px;
+  }
+
+  ul li{
+    line-height: 90px;
+  }
+
+  ul li a {
+    font-size: 22px;
+    padding: 0 10px;
+  }
+}
+
+ul li a:link{
+  color:black;
+}
+
+ul li a:visited{
+  color:black;
+}
+
+ul li a:hover {
+  display: block;
+  color : #fd8f47;
+}
+
+ul li a:active{
+  display: block;
+  color : black;
+  text-decoration-line: none;
+}
