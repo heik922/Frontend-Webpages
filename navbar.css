@@ -1,11 +1,11 @@
 :root {
-  --light-version-purple : #5850ab;
-  --light-version-red : #cc5a88;
-  --light-version-orange : #f6c075;
-  --dark-version-black : #1B1B1B;
+  --light-version-purple: #5850ab;
+  --light-version-red: #cc5a88;
+  --light-version-orange: #f6c075;
+  --dark-version-black: #1b1b1b;
   --dark-version-grey: #323232;
-  --dark-version-orange : #FC6E20;
-  --dark-version-light-orange :#ffe7d0;
+  --dark-version-orange: #fc6e20;
+  --dark-version-light-orange: #ffe7d0;
 }
 
 .navbar-container {
@@ -20,60 +20,62 @@
 
 .navbar-links {
   text-decoration: none;
-  display: block; 
+  display: block;
   text-align: center;
   line-height: 60px;
-  color:black;
+  color: black;
   font-family: 'Montserrat', Verdana;
   font-size: 1.1rem;
   padding: 0rem 0.85rem;
 }
 
-@media only screen and (min-width:768px)  {
+@media only screen and (min-width: 768px) {
   .navbar-container {
     border-bottom: var(--light-version-purple) 1px solid;
-    box-shadow: 0px 0px 10px var(--light-version-purple) ;
+    box-shadow: 0px 0px 10px var(--light-version-purple);
     padding-left: 40px;
     height: 89px;
     display: block;
   }
-  
+
   .navbar-container > ul li {
     list-style: none;
     display: inline-block;
   }
-  
+
   .navbar-links {
     text-decoration: none;
-    display: block; 
+    display: block;
     text-align: center;
     line-height: 90px;
-    color:black;
+    color: black;
     font-family: 'Montserrat', Verdana;
     font-size: 1.1rem;
     padding: 0rem 1rem;
     position: relative;
     overflow: hidden;
   }
-  
+
   .navbar-links::after {
-    content:"";
-    width:100%;
-    height:70px;
+    content: '';
+    width: 100%;
+    height: 70px;
     border-top-left-radius: 0.35rem;
     border-top-right-radius: 0.35rem;
     position: absolute;
     z-index: -100;
-    top:20px;
-    left:0px;
-    background-color:var(--light-version-purple);
+    top: 20px;
+    left: 0px;
+    background-color: var(--light-version-purple);
     transform: translateY(100%);
   }
-  
+}
+
+@media (hover: hover) {
   .navbar-links:hover {
-    color:white;
+    color: white;
   }
-  
+
   .navbar-links:hover::after {
     transform: translateY(0%);
     transition: all 200ms ease;

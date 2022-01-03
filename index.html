@@ -1,67 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!--Information about the webpage-->
-    <head>
-      <title>MK | Portfolio</title>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="initial-scale=1.0,width=device-width">
+  <!--Information about the webpage-->
+  <head>
+    <title>MK | Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0,width=device-width" />
 
-      <!--Fonts-->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
-      <!--External CSS-->
-      <link rel="stylesheet" href="reset_CSS.css">
-      <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="navbar.css">
-    </head>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:ital,wght@1,100&display=swap"
+      rel="stylesheet" />
+    <!--External CSS-->
+    <link rel="stylesheet" href="reset_CSS.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navbar.css" />
+  </head>
 
-    <body>
-      <!--navigation bar-->
-      <header>
-        <nav class="navbar-container">
-          <ul>
-            <li><a href="index.html" class="navbar-links">Home</a></li>
-            <li><a href="#about" class="navbar-links">About</a></li>
-            <li><a href="#projects" class="navbar-links">Projects</a></li>
-            <li><a href="contact.html" class="navbar-links">Contact</a></li>
-            <li><a href="comment.html" class="navbar-links">Comments</a></li>
-          </ul>
-        </nav>
-      </header>
-      
-      <!--Introduction-->   
-      <div class="intro">          
-        <div class="intro-container">
-          <h1 class="intro-h1">Hi! I'm <span id="mei">Mei</span> . </h1>
-          <h2 class="intro-h2">Front End Developer / Video Editor / Coffee Lover</h2>
-          <a href="contact.html" class="letstalk">Let's Talk</a>
-        </div>
+  <body>
+    <!--navigation bar-->
+    <header>
+      <nav class="navbar-container">
+        <ul>
+          <li><a href="index.html" class="navbar-links">Home</a></li>
+          <li><a href="index.html#about" class="navbar-links">About</a></li>
+          <li>
+            <a href="index.html#projects" class="navbar-links">Projects</a>
+          </li>
+          <li><a href="contact.html" class="navbar-links">Contact</a></li>
+          <li><a href="comment.html" class="navbar-links">Comments</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Introduction-->
+    <div class="intro">
+      <div class="intro-container">
+        <h1 class="intro-h1">Hi! I'm <span id="mei">Mei</span> .</h1>
+        <h2 class="intro-h2">
+          Front End Developer / Video Editor / Coffee Lover
+        </h2>
+        <a href="contact.html" class="letstalk">Let's Talk</a>
       </div>
+    </div>
 
-      <div class="about">
-        <div class="about-div">
-          <h2 class="about-title">Lorem Ipsum</h2>
-          <p class="about-content">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-        </div>
-        <div class="about-div">
-          <h2 class="about-title">Lorem Ipsum</h2>
-          <ol class="about-content">
-            <li>Vivamus 100%</li>
-            <li>Vivamus 100%</li>
-            <li>Vivamus 100%</li>
-            <li>Vivamus 100%</li>
-            <li>Vivamus 100%</li>
-          </ol>
-        </div>
+    <div id="about" class="about">
+      <div class="about-div">
+        <h2 class="about-title">Lorem Ipsum</h2>
+        <p class="about-content">
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of
+          using Lorem Ipsum is that it has a more-or-less normal distribution of
+          letters, as opposed to using 'Content here, content here', making it
+          look like readable English. Many desktop publishing packages and web
+          page editors now use Lorem Ipsum as their default model text, and a
+          search for 'lorem ipsum' will uncover many web sites still in their
+          infancy. Various versions have evolved over the years, sometimes by
+          accident, sometimes on purpose (injected humour and the like).
+        </p>
       </div>
+      <div class="about-div">
+        <h2 class="about-title">Lorem Ipsum</h2>
+        <ol class="about-content">
+          <li>Vivamus 100%</li>
+          <li>Vivamus 100%</li>
+          <li>Vivamus 100%</li>
+          <li>Vivamus 100%</li>
+          <li>Vivamus 100%</li>
+        </ol>
+      </div>
+    </div>
 
-      <!-- <footer>
+    <div id="projects" class="project">
+      <a href="#">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="img/github-logo.png" alt="Github Logo" />
+          </div>
+          <div class="project-content">
+            <h3>Github</h3>
+            <p>
+              Many desktop publishing packages and web page editors now use
+              Lorem Ipsum as their default model text, and a search for 'lorem
+              ipsum' will uncover many web sites still in their infancy.
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-icon">
+        <img src="img/mei-footer-icon.jpg" alt="Mei Icon" />
+      </div>
+      <div class="footer-content">
         <p>Author : Mei King Kwok</p>
-        <p>Date : August 2021</p>
-      </footer> -->
-
-    </body>
+        <p>Date : August 30, 2021</p>
+      </div>
+    </footer>
+  </body>
 </html>
