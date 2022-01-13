@@ -39,10 +39,22 @@ main {
   padding: 10vw;
 }
 
-.info-content > h2 {
+.card {
+  min-width: 350px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.25rem;
+  padding: 1.5rem 1rem;
+}
+
+.info-content h2 {
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 20px;
+  max-width: 15ch;
 }
 
 .info-title {
@@ -50,25 +62,43 @@ main {
   margin: 10px 0px;
 }
 
-.info-content > p {
+.info-content p {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
-.info-content > a {
+.link-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.link-container a {
   text-decoration: none;
   color: white;
   position: relative;
-  margin-right: 20px;
-  font-size: 1.15rem;
+  margin-left: 2rem;
+  font-size: 2rem;
 }
 
-.info-content > a::after {
+.link-container a::after {
   content: '';
   background: white;
   width: 1px;
-  height: 20px;
+  height: 40px;
   position: absolute;
   top: 0px;
-  right: -10px;
+  left: -20px;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    min-width: 500px;
+  }
+  .info-content {
+    padding-left: 3rem;
+  }
+  .info-content h2 {
+    max-width: none;
+  }
 }
