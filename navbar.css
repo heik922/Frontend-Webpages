@@ -1,22 +1,28 @@
 :root {
-  --light-version-purple: #5850ab;
-  --light-version-red: #cc5a88;
-  --light-version-orange: #f6c075;
+  --main-background-color: white;
+  --primary-color: #5850ab;
+  --secondary-color: #cc5a88;
+  --third-color: #f6c075;
+  --light-font-color: white;
+  --dark-font-color: black;
+  /* 
   --dark-version-black: #1b1b1b;
   --dark-version-grey: #323232;
   --dark-version-orange: #fc6e20;
   --dark-version-light-orange: #ffe7d0;
+   */
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  border-bottom: var(--light-version-purple) 1px solid;
-  box-shadow: 0px 0px 10px var(--light-version-purple);
+  border-bottom: var(--primary-color) 1px solid;
+  box-shadow: 0px 0px 10px var(--primary-color);
 }
 
 .navbar-container {
   display: block;
+  max-width: 350px;
 }
 
 .navbar-container > ul li {
@@ -29,16 +35,25 @@ header {
   display: block;
   text-align: center;
   line-height: 60px;
-  color: black;
+  color: var(--dark-font-color);
   font-family: 'Montserrat', Verdana;
   font-size: 1.1rem;
   padding: 0rem 0.85rem;
 }
 
 .btn-toggle {
-  max-width: 35px;
+  max-width: 40px;
   padding-top: 30px;
   padding-right: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 1;
+  transition: all 500ms;
+}
+
+.hidden {
+  opacity: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -46,6 +61,7 @@ header {
     padding-left: 40px;
     height: 89px;
     display: block;
+    max-width: none;
   }
 
   .navbar-container > ul li {
@@ -58,7 +74,7 @@ header {
     display: block;
     text-align: center;
     line-height: 90px;
-    color: black;
+    color: var(--dark-font-color);
     font-family: 'Montserrat', Verdana;
     font-size: 1.1rem;
     padding: 0rem 1rem;
@@ -76,14 +92,14 @@ header {
     z-index: -100;
     top: 20px;
     left: 0px;
-    background-color: var(--light-version-purple);
+    background-color: var(--primary-color);
     transform: translateY(100%);
   }
 }
 
 @media (hover: hover) {
   .navbar-links:hover {
-    color: white;
+    color: var(--light-font-color);
   }
 
   .navbar-links:hover::after {

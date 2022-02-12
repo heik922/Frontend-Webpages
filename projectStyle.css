@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-background-color: white;
+  --primary-color: #5850ab;
+  --secondary-color: #cc5a88;
+  --third-color: #f6c075;
+  --light-font-color: white;
+  --dark-font-color: black;
+  /*
+    --dark-version-black: #1b1b1b;
+    --dark-version-grey: #323232;
+    --dark-version-orange: #fc6e20;
+    --dark-version-light-orange: #ffe7d0;
+    */
+}
+
+main {
+  background: linear-gradient(
+    115deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'roboto';
+  color: var(--light-font-color);
+}
+
+.project-video {
+  min-width: 350px;
+  margin-top: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.25rem;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5rem;
+}
+
+.project-lang {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem;
+  color: var(--third-color);
+  font-style: italic;
+}
+
+.project-video-src {
+  max-width: 320px;
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 3rem 1rem;
+  line-height: 1.5rem;
+}
+
+.description {
+  margin-bottom: 2rem;
+  font-size: 1.15rem;
+}
+
+.rules {
+  font-style: italic;
+  font-weight: 800;
+  color: var(--third-color);
+}
+
+@media screen and (min-width: 768px) {
+  .project-video-src {
+    max-width: 90vw;
+  }
+  .project-description {
+    margin: 3rem;
+  }
+  .project-title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .project-video-src {
+    max-width: 50vw;
+  }
+  .project-description {
+    max-width: 50vw;
+  }
+}

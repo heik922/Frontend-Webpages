@@ -1,15 +1,22 @@
 :root {
-  --light-version-purple: #5850ab;
-  --light-version-red: #cc5a88;
-  --light-version-orange: #f6c075;
+  --main-background-color: white;
+  --primary-color: #5850ab;
+  --secondary-color: #cc5a88;
+  --third-color: #f6c075;
+  --light-font-color: white;
+  --dark-font-color: black;
+  /*
   --dark-version-black: #1b1b1b;
   --dark-version-grey: #323232;
   --dark-version-orange: #fc6e20;
   --dark-version-light-orange: #ffe7d0;
+  */
 }
 
 .intro {
+  /* display: flex; */
   background-image: url('img/Mei.jpg');
+  background-color: none;
   background-position: center;
   background-size: cover;
   position: relative;
@@ -21,7 +28,7 @@
 }
 
 #mei {
-  color: var(--light-version-red);
+  color: var(--secondary-color);
 }
 
 .intro-h1 {
@@ -46,10 +53,10 @@
   text-decoration: none;
   font-family: 'Montserrat';
   font-weight: bold;
-  color: black;
-  border: 1.5px solid var(--light-version-red);
-  background-color: var(--light-version-red);
-  box-shadow: 0 0px 5px var(--light-version-red);
+  color: var(--dark-font-color);
+  border: 1.5px solid var(--secondary-color);
+  background-color: var(--secondary-color);
+  box-shadow: 0 0px 5px var(--secondary-color);
   margin: 20px 0 0 50px;
   padding: 15px 30px;
   cursor: pointer;
@@ -61,7 +68,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 2rem;
-  background-color: var(--light-version-purple);
+  background-color: var(--primary-color);
 }
 
 .about-div {
@@ -69,7 +76,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #ffffff;
+  color: var(--light-font-color);
 }
 
 .about-title {
@@ -113,12 +120,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
+  color: var(--light-font-color);
 }
 
 .project a {
   text-decoration: none;
-  color: white;
+  color: var(--light-font-color);
 }
 
 .project-card {
@@ -128,8 +135,8 @@
   border-radius: 0.5rem;
   background: linear-gradient(
     135deg,
-    var(--light-version-purple),
-    var(--light-version-red)
+    var(--primary-color),
+    var(--secondary-color)
   );
   display: flex;
   justify-content: center;
@@ -157,7 +164,7 @@
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1rem;
   padding: 1rem 0rem;
-  color: var(--light-version-orange);
+  color: var(--third-color);
   font-style: italic;
 }
 
@@ -168,7 +175,7 @@
 }
 
 .footer {
-  background: var(--light-version-purple);
+  background: var(--primary-color);
   min-height: 100px;
   display: flex;
   flex-direction: column;
@@ -179,12 +186,12 @@
 
 .footer-icon > img {
   max-width: 90px;
-  border: 5px solid var(--light-version-red);
+  border: 5px solid var(--secondary-color);
   border-radius: 50%;
 }
 
 .footer-content {
-  color: white;
+  color: var(--light-font-color);
   font-family: 'Roboto', Verdana;
   line-height: 1.2rem;
 }
@@ -249,10 +256,10 @@
     overflow: hidden;
   }
   #mei {
-    color: black;
+    color: var(--dark-font-color);
   }
   .letstalk {
-    background-color: #ffffff;
+    background-color: var(--main-background-color);
     box-shadow: none;
   }
   .about {
@@ -270,11 +277,11 @@
     transform: scale(1.1);
   }
   .letstalk:hover {
-    background-color: var(--light-version-red);
+    background-color: var(--secondary-color);
     transform: scale(1.1);
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.24);
   }
   #mei:hover {
-    color: var(--light-version-red);
+    color: var(--secondary-color);
   }
 }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:ital,wght@1,100&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="reset_CSS.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="projectStyle.css" />
+
+    <title>MK | Bankist App</title>
+  </head>
+
+  <body>
+    <!--navigation bar-->
+    <header>
+      <nav class="navbar-container">
+        <ul>
+          <li><a href="index.html" class="navbar-links">Home</a></li>
+          <li><a href="index.html#about" class="navbar-links">About</a></li>
+          <li><a href="resume.html" class="navbar-links">Resume</a></li>
+          <li>
+            <a href="index.html#projects" class="navbar-links">Projects</a>
+          </li>
+          <li><a href="contact.html" class="navbar-links">Contact</a></li>
+          <li></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="project-video">
+        <h2 class="project-title">Bankist App</h2>
+        <p class="project-lang">JavaScript</p>
+        <video controls class="project-video-src">
+          <source src="video/Bankist.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="project-description">
+        <p class="description">
+          A simple banking application that requires and checks user login
+          informations. After user logged in successfully , application will
+          display all the transaction histories. Also, it will display the total
+          deposit, total withdrawal and current balance of the current user.
+          Bankist also provides basic banking features such as request a loan
+          from the bank, transfer money between accounts and close the current
+          account.
+        </p>
+
+        <p class="rules">Rules and Features :</p>
+        <p>
+          1.Takes user's account and pin numbers, then check if inputs match the
+          database.
+        </p>
+        <p>
+          2.If user logged in successfully, Bankist will display the
+          user-interface. Also start the logout timer.
+        </p>
+        <p>3.Add Sorting button that sort and unsort the transactions.</p>
+        <p>
+          4. User may request a loan but the bank will only allow if the current
+          user has at least 1 deposit that is 10% of the requested amount. If
+          loan is approved, the amount will be added to current balance.
+        </p>
+        <p>
+          5. User may transfer money between accounts with 2 conditions : the
+          account must existed in database and amount must be positive.
+        </p>
+        <p>
+          6. User may close their account with correct account and pin numbers.
+        </p>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>

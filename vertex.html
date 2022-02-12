@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:ital,wght@1,100&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="reset_CSS.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="projectStyle.css" />
+
+    <title>MK | Drawing Vertex App</title>
+  </head>
+
+  <body>
+    <!--navigation bar-->
+    <header>
+      <nav class="navbar-container">
+        <ul>
+          <li><a href="index.html" class="navbar-links">Home</a></li>
+          <li><a href="index.html#about" class="navbar-links">About</a></li>
+          <li><a href="resume.html" class="navbar-links">Resume</a></li>
+          <li>
+            <a href="index.html#projects" class="navbar-links">Projects</a>
+          </li>
+          <li><a href="contact.html" class="navbar-links">Contact</a></li>
+          <li></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="project-video">
+        <h2 class="project-title">Vertex App</h2>
+        <p class="project-lang">JavaScript</p>
+        <video controls class="project-video-src">
+          <source src="video/Vertex.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="project-description">
+        <p class="description">
+          A Java program implement with graphics and Jframe which allow user to
+          draw vertices on the JPanel by clicking on the panel area. After
+          drawing the vertices, user may add any edge between the vertices. Also
+          has other features such as moving the vertices, remove any vertex or
+          edge.
+        </p>
+
+        <p class="rules">Rules and Features :</p>
+        <p>1.Add one or more vertices by clicking on the Jpanel.</p>
+        <p>
+          2.Add edge by clicking on 2 vertices only if a edge does not existed
+          between the chosen vertices.
+        </p>
+        <p>
+          3.Remove one or more vertices on the panel. If an edge is attached to
+          the chosen vertex, the edge will be removed also.
+        </p>
+        <p>4.Remove one or more edges on the panel.</p>
+        <p>
+          5.Move vertex around the panel, if there is an edge attached to the
+          vertex , the edge's length and direction will be updated also.
+        </p>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>

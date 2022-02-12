@@ -36,9 +36,17 @@
             <a href="index.html#projects" class="navbar-links">Projects</a>
           </li>
           <li><a href="contact.html" class="navbar-links">Contact</a></li>
-          <li></li>
         </ul>
       </nav>
+      <div>
+        <img
+          class="btn-toggle"
+          src="https://img.icons8.com/ios/100/5850ab/toggle-on--v2.png" />
+        <img
+          class="btn-toggle hidden"
+          id="second-button"
+          src="https://img.icons8.com/ios/50/fc6e20/toggle-off--v2.png" />
+      </div>
     </header>
 
     <!--Introduction-->
@@ -66,7 +74,6 @@
       </div>
       <div class="about-div">
         <h2 class="about-title">Skills</h2>
-
         <div class="about-skill">
           <div class="about-skill-logo">
             <img src="/img/html.png" alt="HTML-Logo" />
@@ -139,6 +146,55 @@
           </div>
         </div>
       </a>
+
+      <a href="mapty.html" target="_blank">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="img/mapty.png" alt="Mapty App Image" />
+          </div>
+          <div class="project-content">
+            <h3>Mapty</h3>
+            <p><span>JavaScript</span></p>
+            <p>
+              Implemented with Leaflet's API. A Simple Mapping application which
+              allow users to click on the locations and log their exercise
+              datas. The datas will be stored in browser's local storage.
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <a href="bankist.html" target="_blank">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="img/bankist.png" alt="Bankist App Image" />
+          </div>
+          <div class="project-content">
+            <h3>Bankist App</h3>
+            <p><span>JavaScript</span></p>
+            <p>
+              A simple banking application that requires user to login to view
+              their transactions and accesses other features.
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <a href="vertex.html" target="_blank">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="img/vertex.png" alt="Pig Game Image" />
+          </div>
+          <div class="project-content">
+            <h3>Vertex App</h3>
+            <p><span>Java</span></p>
+            <p>
+              A application that takes mouse coordinates and draw vertexes, add
+              edges between the vertexes, moving the vertexes and delete edges.
+            </p>
+          </div>
+        </div>
+      </a>
     </div>
 
     <footer class="footer">
@@ -151,4 +207,5 @@
       </div>
     </footer>
   </body>
+  <script src="script.js"></script>
 </html>
