@@ -14,7 +14,6 @@
 }
 
 .intro {
-  /* display: flex; */
   background-image: url('img/Mei.jpg');
   background-color: none;
   background-position: center;
@@ -182,12 +181,6 @@
   justify-content: center;
   align-items: center;
   padding: 1rem 0rem;
-}
-
-.footer-icon > img {
-  max-width: 90px;
-  border: 5px solid var(--secondary-color);
-  border-radius: 50%;
 }
 
 .footer-content {

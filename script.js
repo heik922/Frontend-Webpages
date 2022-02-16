@@ -3,8 +3,6 @@
 const toggleBtn = document.querySelectorAll('.btn-toggle');
 const secondBtn = document.querySelector('#second-button');
 
-console.log(toggleBtn);
-
 secondBtn.addEventListener('click', function () {
   toggleBtn.forEach((button) => {
     if (button.classList.contains('hidden')) {
@@ -12,5 +10,16 @@ secondBtn.addEventListener('click', function () {
     } else {
       button.classList.add('hidden');
     }
+  });
+});
+
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth',
+      block: 'center',
+    });
   });
 });
