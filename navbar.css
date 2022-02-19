@@ -19,7 +19,7 @@ header {
   border-bottom: var(--primary-color) 1px solid;
   box-shadow: 0px 0px 10px var(--primary-color);
   position: fixed;
-  height: 89px;
+  height: 115px;
   left: 0;
   right: 0;
   z-index: 11;
@@ -63,6 +63,9 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
+  header {
+    height: 89px;
+  }
   .navbar-container {
     padding-left: 40px;
     height: 89px;
