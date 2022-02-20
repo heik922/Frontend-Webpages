@@ -190,9 +190,18 @@
   line-height: 1.2rem;
 }
 
+.section {
+  transition: all 600ms ease;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
 @media only screen and (min-width: 768px) {
   .intro {
-    padding-top: 0;
+    padding-top: 0px;
     background-position: right center;
     background-repeat: no-repeat;
     background-size: auto 600px;
@@ -240,6 +249,7 @@
 
 @media only screen and (min-width: 1025px) {
   .intro {
+    padding-top: 89px;
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: auto 900px;
