@@ -23,7 +23,6 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="navbar.css" />
     <!-- JavaScript -->
-    <script defer src="script.js"></script>
   </head>
 
   <body>
@@ -33,11 +32,13 @@
         <ul>
           <li><a href="index.html" class="navbar-links">Home</a></li>
           <li>
-            <a href="#about" class="navbar-links">About</a>
+            <a href="#about" class="navbar-links" data-scroll="#about">About</a>
           </li>
           <li><a href="resume.html" class="navbar-links">Resume</a></li>
           <li>
-            <a href="#projects" class="navbar-links">Projects</a>
+            <a href="#projects" class="navbar-links" data-scroll="#projects"
+              >Projects</a
+            >
           </li>
           <li><a href="contact.html" class="navbar-links">Contact</a></li>
         </ul>
@@ -64,7 +65,7 @@
       </div>
     </div>
 
-    <div id="about" class="about section">
+    <div id="about" class="about section section--hidden">
       <div class="about-div">
         <h2 class="about-title">About Me</h2>
         <p class="about-content">
@@ -99,7 +100,7 @@
       </div>
     </div>
 
-    <div id="projects" class="project section">
+    <div id="projects" class="project section section--hidden">
       <a href="http://mane370p2.herokuapp.com/index.php" target="_blank">
         <div class="project-card">
           <div class="project-image">
@@ -207,5 +208,7 @@
         <p>Date : August 30, 2021</p>
       </div>
     </footer>
+
+    <script defer src="script.js"></script>
   </body>
 </html>
