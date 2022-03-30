@@ -7,7 +7,7 @@ const sections = document.querySelectorAll('.section');
 // revealing elements on About and Project content
 const revealElem = function (entries, oberver) {
   const [entry] = entries;
-  console.log(entry);
+
   if (!entry.isIntersecting) return;
 
   entry.target.classList.remove('section--hidden');
@@ -16,7 +16,7 @@ const revealElem = function (entries, oberver) {
 
 const sectionObserver = new IntersectionObserver(revealElem, {
   root: null,
-  threshold: 0.000001,
+  threshold: 0.01,
 });
 
 sections.forEach((section) => {
@@ -25,15 +25,17 @@ sections.forEach((section) => {
 });
 
 // change theme button
-secondBtn.addEventListener('click', function () {
-  toggleBtn.forEach((button) => {
-    if (button.classList.contains('hidden')) {
-      button.classList.remove('hidden');
-    } else {
-      button.classList.add('hidden');
-    }
+if (secondBtn) {
+  secondBtn.addEventListener('click', function () {
+    toggleBtn.forEach((button) => {
+      if (button.classList.contains('hidden')) {
+        button.classList.remove('hidden');
+      } else {
+        button.classList.add('hidden');
+      }
+    });
   });
-});
+}
 
 // smooth scrolling on <a>
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -47,24 +49,8 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// var sectionLinks = document.querySelectorAll('[data-scroll]');
-
-// sectionLinks.forEach((link) => {
-//   console.log('LINKS : ........ ', link);
-//   link.addEventListener('click', (event) => {
-//     event.preventDefault();
-//     var sectionToScroll = document.getElementById(event.target.datalist.scroll);
-//     console.log('SECTION TO SCROLL ', sectionToScroll);
-//     var { y: coord_y } = sectionToScroll.getBoundingClientRect();
-//     window.scrollTo({
-//       x: 0,
-//       y: coord_y,
-//       behavior: 'smooth',
-//     });
-//   });
-// });
-
 window.onload = function () {
+  if (!window.location.hash) return;
   var sectionToScroll = document.querySelector(window.location.hash);
   setTimeout(function () {
     if (
@@ -72,12 +58,6 @@ window.onload = function () {
       sectionToScroll.classList.contains('section--hidden')
     ) {
       sectionToScroll.classList.remove('section--hidden');
-      // var { y: coord_y } = sectionToScroll.getBoundingClientRect();
-      // window.scrollTo({
-      //   x: 0,
-      //   y: coord_y,
-      //   behavior: 'smooth',
-      // });
     }
   }, 200);
 };
