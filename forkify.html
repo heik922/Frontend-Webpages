@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:ital,wght@1,100&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="reset_CSS.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="projectStyle.css" />
+
+    <title>MK | Forkify App</title>
+  </head>
+
+  <body>
+    <!--navigation bar-->
+    <header>
+      <nav class="navbar-container">
+        <ul>
+          <li><a href="index.html" class="navbar-links">Home</a></li>
+          <li><a href="index.html#about" class="navbar-links">About</a></li>
+          <li><a href="resume.html" class="navbar-links">Resume</a></li>
+          <li>
+            <a href="index.html#projects" class="navbar-links">Projects</a>
+          </li>
+          <li><a href="contact.html" class="navbar-links">Contact</a></li>
+          <li></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="project-video">
+        <h2 class="project-title">Forkify</h2>
+        <p class="project-lang">JavaScript</p>
+        <video controls class="project-video-src">
+          <source src="video/forkify.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="project-description">
+        <p class="description">
+          An application that allow users search and load recipe from a public
+          API. Users may bookmark their favorite recipes and modify the serving
+          amount. Users may also upload thier own recipe to the API.
+        </p>
+
+        <p class="rules">Rules and Features :</p>
+        <p>
+          1.User may search for recipes with certain keywords (e.g. pizza,
+          burger, avocado...)
+        </p>
+        <p>
+          2.If user want to calculate the ingredients quantity for a different
+          serving number, simpliy just press on the "-" or "+" buttons.
+        </p>
+        <p>
+          3. User can bookmark the recipe, it will be saved into bookmark list
+          on the top-right corner and easier to search for it.
+        </p>
+        <p>
+          4. User are also allow to upload their own recipe, with certain rules
+          and ingredients format. Then, the recipe will be upload and stores in
+          API.
+        </p>
+        <p>
+          5. Only current user may view their own recipes, other user may not
+          search and view the current user's recipes.
+        </p>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
