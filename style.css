@@ -168,6 +168,12 @@
   font-style: italic;
 }
 
+.project-content a {
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+  padding-left: 2rem;
+}
+
 .project-content p {
   font-family: 'Roboto', Verdana;
   font-size: 1rem;
@@ -289,5 +295,9 @@
   }
   #mei:hover {
     color: var(--secondary-color);
+  }
+  .project-links:hover {
+    color: var(--secondary-color);
+    font-style: italic;
   }
 }
